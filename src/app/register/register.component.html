@@ -1,0 +1,57 @@
+<!-- register-form.component.html -->
+<div class="register-container">
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="register-form">
+      <h2 class="register-title">Tenant Registration</h2>
+  
+      <label for="firstName">First Name</label>
+      <input
+        type="text"
+        id="firstName"
+        formControlName="firstName"
+        required
+      />
+      <div *ngIf="registerForm.get('firstName')?.invalid && registerForm.get('firstName')?.touched">
+        <small class="error-text">First Name is required.</small>
+      </div>
+  
+      <label for="secondName">Second Name</label>
+      <input
+        type="text"
+        id="secondName"
+        formControlName="secondName"
+        required
+      />
+      <div *ngIf="registerForm.get('secondName')?.invalid && registerForm.get('secondName')?.touched">
+        <small class="error-text">Second Name is required.</small>
+      </div>
+  
+      <label for="phoneNumber">Phone Number</label>
+      <input
+        type="tel"
+        id="phoneNumber"
+        formControlName="phoneNumber"
+        required
+      />
+      <div *ngIf="registerForm.get('phoneNumber')?.invalid && registerForm.get('phoneNumber')?.touched">
+        <small class="error-text">Valid Phone Number is required.</small>
+      </div>
+  
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        formControlName="password"
+        required
+      />
+      <div *ngIf="registerForm.get('password')?.invalid && registerForm.get('password')?.touched">
+        <small class="error-text">Password is required (min 6 characters).</small>
+      </div>
+  
+      <button type="submit" class="register-btn" [disabled]="registerForm.invalid">Register</button>
+  
+      <p class="existing-user">
+        Already have an account? <a routerLink="/login" class="login-link">Login here</a>
+      </p>
+    </form>
+  </div>
+  

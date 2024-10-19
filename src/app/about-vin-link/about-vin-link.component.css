@@ -1,0 +1,25 @@
+/* AboutVinlink.css */
+.about-vinlink-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-vinlink-title {
+    color: maroon;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .about-vinlink-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  

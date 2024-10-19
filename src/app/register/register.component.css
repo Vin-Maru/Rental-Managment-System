@@ -1,0 +1,61 @@
+/* register-form.component.css */
+.register-container {
+    max-width: 400px;
+    margin: 120px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 3);
+
+  }
+  
+  .register-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: maroon;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .register-form label {
+    margin-bottom: 5px;
+    color: maroon;
+  }
+  
+  .register-form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .register-btn {
+    padding: 10px;
+    background-color: maroon;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .register-btn:disabled {
+    background-color: grey;
+  }
+  
+  .error-text {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .existing-user {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .login-link {
+    color: maroon;
+  }
+  

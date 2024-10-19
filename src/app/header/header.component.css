@@ -1,0 +1,48 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    margin: 10px;
+    background-color: maroon;
+    padding: 5px;
+    border-radius: 10px;
+    position: fixed; /* Change to fixed to keep it at the top */
+
+    top: 0; /* Position it at the top */
+    left: 0;
+    right: 0;
+    transition: transform 0.7s ease; /* Smooth transition */
+    z-index: 1000; /* Keep it above other content */
+  }
+  
+  .header-hidden {
+    transform: translateY(-100%); /* Move header out of view */
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: black;
+  }
+  

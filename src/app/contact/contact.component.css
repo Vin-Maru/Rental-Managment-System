@@ -1,0 +1,58 @@
+/* contact.component.css */
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-title {
+    text-align: center;
+    color: maroon;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .contact-icon {
+    margin-right: 10px;
+    color: maroon; /* Change icon color as needed */
+    font-size: 1.5rem; /* Adjust size */
+  }
+  
+  .contact-text {
+    font-size: 1.1rem;
+  }
+  
+  .social-title {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: maroon;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    margin: 0 10px;
+    font-size: 1.5rem; /* Size for social icons */
+    color: maroon; /* Change color if needed */
+  }
+  

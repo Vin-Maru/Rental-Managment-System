@@ -1,0 +1,23 @@
+/* Footer.css */
+.footer {
+    background-color: black;
+    color: white;
+    padding: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-radius: 2px;
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 1200px; /* You can adjust this width as needed */
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center; /* Center the text inside the content */
+
+}
